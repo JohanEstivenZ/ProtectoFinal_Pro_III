@@ -7,6 +7,12 @@
     <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Modelos/Anunciante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modelos/Anuncio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modelos/Comprador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modelos/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modelos/Producto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modelos/Puja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modelos/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/protectofinal_pro_iii/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/HelloApplication.java" afterDir="false" />
@@ -68,7 +74,7 @@
       <updated>1695930745653</updated>
       <workItem from="1695930746715" duration="2000" />
       <workItem from="1695931335220" duration="58000" />
-      <workItem from="1695931890365" duration="764000" />
+      <workItem from="1695931890365" duration="927000" />
     </task>
     <servers />
   </component>
