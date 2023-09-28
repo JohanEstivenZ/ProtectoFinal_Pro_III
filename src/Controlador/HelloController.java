@@ -1,4 +1,4 @@
-package com.example.protectofinal_pro_iii;
+package Controlador;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

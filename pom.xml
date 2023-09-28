@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.protectofinal_pro_iii/com.example.protectofinal_pro_iii.HelloApplication
+                                com.example.protectofinal_pro_iii/application.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
