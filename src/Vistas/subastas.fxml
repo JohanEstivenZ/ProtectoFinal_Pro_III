@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
+        <tabs>
+          <Tab text="Registro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="600.0">
+                     <children>
+                        <TextField alignment="TOP_CENTER" layoutX="1.0" layoutY="14.0" prefHeight="26.0" prefWidth="600.0" text="A continuacion ingrese la informacion solicitada en los campos, todo en minusculas" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Autenticación">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="600.0" scaleX="0.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

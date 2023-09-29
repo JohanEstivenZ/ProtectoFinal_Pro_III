@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controlador/ControladorSubastas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Vistas/subastas.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vistas/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -66,6 +71,7 @@
       <workItem from="1695933565931" duration="804000" />
       <workItem from="1695948761391" duration="23000" />
       <workItem from="1695949911392" duration="239000" />
+      <workItem from="1696021560228" duration="1581000" />
     </task>
     <servers />
   </component>
