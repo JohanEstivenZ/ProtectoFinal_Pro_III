@@ -1,4 +1,4 @@
 package co.edu.uniquindio.subasta.subastasuq.model;
 
-public class Subastas {
+public class SubastaQuindio {
 }
