@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/Prueba2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/exceptions/ExcPrueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/dto/PruebaDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Anunciante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Comprador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controlador/ControladorSubastas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controlador/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/HelloViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Anunciante.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Anuncio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Anuncio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Comprador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Persona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Puja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Puja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelos/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vistas/subastas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +82,7 @@
       <workItem from="1695949911392" duration="239000" />
       <workItem from="1696021560228" duration="1581000" />
       <workItem from="1696104623465" duration="128000" />
-      <workItem from="1696192566344" duration="2885000" />
+      <workItem from="1696192566344" duration="3618000" />
     </task>
     <servers />
   </component>
