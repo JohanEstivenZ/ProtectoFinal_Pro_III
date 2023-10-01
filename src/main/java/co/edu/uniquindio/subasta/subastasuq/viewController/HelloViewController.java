@@ -1,9 +1,9 @@
-package Controlador;
+package co.edu.uniquindio.subasta.subastasuq.viewController;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class HelloViewController {
     @FXML
     private Label welcomeText;
 

@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="" />
+    <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/Prueba2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/exceptions/ExcPrueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/dto/PruebaDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Anunciante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Comprador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controlador/ControladorSubastas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controlador/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/HelloViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Anunciante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Anuncio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Anuncio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Comprador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Puja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Puja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelos/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vistas/subastas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -30,24 +52,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/juanj/Downloads/banco_javafx-dev-2-banco-crud/bancoUq",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Johan\Documents\GitHub\ProtectoFinal_Pro_III\src" />
-      <recent name="C:\Users\Johan\Documents\GitHub\ProtectoFinal_Pro_III\src\Vistas" />
+      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\java" />
+      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\java\co\edu\uniquindio\subasta\subastasuq" />
+      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\resources\co.edu.uniquindio.subas.subastasuq" />
+      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main" />
+      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -67,6 +101,7 @@
       <workItem from="1695949911392" duration="239000" />
       <workItem from="1696021560228" duration="1581000" />
       <workItem from="1696104623465" duration="128000" />
+      <workItem from="1696192566344" duration="2885000" />
     </task>
     <servers />
   </component>

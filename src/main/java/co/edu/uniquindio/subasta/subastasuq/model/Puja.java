@@ -1,4 +1,4 @@
-package Modelos;
+package co.edu.uniquindio.subasta.subastasuq.model;
 
 public class Puja {
     private String codigoPuja;
