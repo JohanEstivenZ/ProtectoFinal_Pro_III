@@ -1,25 +1,26 @@
 package co.edu.uniquindio.subasta.subastasuq.model;
 
 public class Usuario {
-    private String nombreUsauario;
-    private String contraseña;
+    private String nombreUsuario;
+
+    private String contrasena;
 
     public Usuario() {
     }
 
-    public String getNombreUsauario() {
-        return nombreUsauario;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
-    public void setNombreUsauario(String nombreUsauario) {
-        this.nombreUsauario = nombreUsauario;
+    public void setNombreUsuario(String nombreUsauario) {
+        this.nombreUsuario = nombreUsauario;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 }
