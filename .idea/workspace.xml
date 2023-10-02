@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/SubastaQViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/SQ.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/SubastaQApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/HelloViewController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +58,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\resources\Images" />
       <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\java" />
       <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\java\co\edu\uniquindio\subasta\subastasuq" />
       <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\resources\co.edu.uniquindio.subas.subastasuq" />
       <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main" />
-      <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="co.edu.uniquindio.subasta.subastasuq.model" />
@@ -92,7 +89,7 @@
       <workItem from="1696021560228" duration="1581000" />
       <workItem from="1696104623465" duration="128000" />
       <workItem from="1696192566344" duration="3618000" />
-      <workItem from="1696198507797" duration="5820000" />
+      <workItem from="1696198507797" duration="7546000" />
     </task>
     <servers />
   </component>

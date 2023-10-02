@@ -5,46 +5,53 @@
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.SubastaQViewController">
    <children>
-      <TabPane prefHeight="560.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
+      <TabPane prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #DCD7C9;" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
         <tabs>
-          <Tab text="Registro">
+          <Tab closable="false" style="-fx-border-color: #3F4E4F; -fx-background-color: #DCD7C9;" text="Registro">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="600.0">
                      <children>
-                        <Text layoutX="80.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A continuacion ingrese la informacion solicitada en los campos, todo en minusculas" />
-                        <AnchorPane layoutX="1.0" layoutY="56.0" prefHeight="230.0" prefWidth="600.0">
+                        <ImageView fitHeight="550.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/SQ.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#2c3639" layoutX="102.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A continuacion ingrese la informacion solicitada en los campos, todo en minusculas" />
+                        <AnchorPane layoutX="1.0" layoutY="74.0" prefHeight="239.0" prefWidth="600.0">
                            <children>
-                              <Text layoutX="75.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
-                              <Text layoutX="75.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
-                              <TextField fx:id="txtNombre" layoutX="150.0" layoutY="46.0" prefHeight="26.0" prefWidth="370.0" />
-                              <TextField fx:id="txtApellido" layoutX="150.0" layoutY="87.0" prefHeight="26.0" prefWidth="370.0" />
-                              <TextField fx:id="txtCedula" layoutX="150.0" layoutY="126.0" prefHeight="26.0" prefWidth="370.0" />
-                              <TextField fx:id="txtEdad" layoutX="150.0" layoutY="171.0" prefHeight="26.0" prefWidth="370.0" />
-                              <Text layoutX="75.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula" />
-                              <Text layoutX="75.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
-                              <Text layoutX="24.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion personal" />
+                              <Text fill="#2c3639" layoutX="83.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                              <Text fill="#2c3639" layoutX="81.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
+                              <TextField fx:id="txtNombre" layoutX="148.0" layoutY="50.0" prefHeight="26.0" prefWidth="370.0" />
+                              <TextField fx:id="txtApellido" layoutX="148.0" layoutY="86.0" prefHeight="26.0" prefWidth="370.0" />
+                              <TextField fx:id="txtCedula" layoutX="148.0" layoutY="124.0" prefHeight="26.0" prefWidth="370.0" />
+                              <TextField fx:id="txtEdad" layoutX="148.0" layoutY="162.0" prefHeight="26.0" prefWidth="370.0" />
+                              <Text fill="#2c3639" layoutX="81.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula" />
+                              <Text fill="#2c3639" layoutX="81.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+                              <Text fill="#dcd7c9" layoutX="43.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion personal" textAlignment="CENTER" wrappingWidth="127.57110595703125" />
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="1.0" layoutY="286.0" prefHeight="180.0" prefWidth="600.0">
+                        <AnchorPane layoutX="-4.0" layoutY="333.0" prefHeight="162.0" prefWidth="610.0">
                            <children>
-                              <Text layoutX="29.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion de usuario" />
-                              <Text layoutX="77.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
-                              <Text layoutX="77.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
-                              <TextField fx:id="txtUsuario" layoutX="152.0" layoutY="66.0" prefHeight="26.0" prefWidth="370.0" />
-                              <PasswordField fx:id="txtContrasena" layoutX="152.0" layoutY="108.0" prefHeight="26.0" prefWidth="370.0" />
+                              <Text fill="#2c3639" layoutX="91.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+                              <Text fill="#2c3639" layoutX="91.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+                              <TextField fx:id="txtUsuario" layoutX="173.0" layoutY="46.0" prefHeight="26.0" prefWidth="345.0" />
+                              <PasswordField fx:id="txtContrasena" layoutX="173.0" layoutY="89.0" prefHeight="26.0" prefWidth="345.0" />
+                              <Text fill="#dcd7c9" layoutX="53.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion de usuario" textAlignment="CENTER" wrappingWidth="127.57110595703125" />
                            </children>
                         </AnchorPane>
-                        <Button fx:id="btnRegistrase" layoutX="215.0" layoutY="477.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Registrarse" />
+                        <Button fx:id="btnRegistrase" layoutX="216.0" layoutY="501.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #3F4E4F;" text="Registrarse" textFill="#dcd7c9" />
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="Autenticación">
+          <Tab style="-fx-background-color: #DCD7C9; -fx-border-color: #3F4E4F;" text="Autenticación">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="600.0" scaleX="0.0" />
             </content>
