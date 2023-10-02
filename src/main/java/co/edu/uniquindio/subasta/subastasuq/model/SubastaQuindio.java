@@ -88,5 +88,21 @@ public class SubastaQuindio implements ISubastaQuindio {
         }
         return usuarioEncontrado;
     }
-
+    public Usuario crearAnuncio(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException{
+        Usuario nuevoUsuario = null;
+        boolean usuarioExistente = verificarUsuarioExistente(nombreUsuario, cedula);
+        if(usuarioExistente){
+            throw new UsuarioException("El usuario: "+nombreUsuario+" o la cedula"+cedula+ " ya existe");
+        }else{
+            nuevoUsuario = new Usuario();
+            nuevoUsuario.setNombreUsuario(nombreUsuario);
+            nuevoUsuario.setContrasena(contrasena);
+            nuevoUsuario.setNombre(nombre);
+            nuevoUsuario.setApellido(apellido);
+            nuevoUsuario.setCedula(cedula);
+            nuevoUsuario.setEdad(edad);
+            getListaUsuarios().add(nuevoUsuario);
+        }
+        return nuevoUsuario;
+    }
 }
