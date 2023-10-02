@@ -12,11 +12,11 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.SubastaQViewController">
    <children>
-      <TabPane prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #DCD7C9;" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
+      <TabPane prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #183d3d;" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
         <tabs>
-          <Tab closable="false" style="-fx-border-color: #3F4E4F; -fx-background-color: #DCD7C9;" text="Registro">
+          <Tab closable="false" style="-fx-border-color: #183d3d; -fx-background-color: #ffffff;" text="Registro">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="600.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #ffffff; -fx-border-color: #183d3d;">
                      <children>
                         <ImageView fitHeight="550.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -24,7 +24,7 @@
                            </image>
                         </ImageView>
                         <Text fill="#2c3639" layoutX="102.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A continuacion ingrese la informacion solicitada en los campos, todo en minusculas" />
-                        <AnchorPane layoutX="1.0" layoutY="74.0" prefHeight="239.0" prefWidth="600.0">
+                        <AnchorPane layoutX="1.0" layoutY="87.0" prefHeight="239.0" prefWidth="600.0">
                            <children>
                               <Text fill="#2c3639" layoutX="83.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
                               <Text fill="#2c3639" layoutX="81.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
@@ -34,24 +34,24 @@
                               <TextField fx:id="txtEdad" layoutX="148.0" layoutY="162.0" prefHeight="26.0" prefWidth="370.0" />
                               <Text fill="#2c3639" layoutX="81.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula" />
                               <Text fill="#2c3639" layoutX="81.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
-                              <Text fill="#dcd7c9" layoutX="43.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion personal" textAlignment="CENTER" wrappingWidth="127.57110595703125" />
+                              <Text fill="WHITE" layoutX="43.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion personal" textAlignment="CENTER" wrappingWidth="127.57110595703125" />
                            </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="-4.0" layoutY="333.0" prefHeight="162.0" prefWidth="610.0">
+                        <AnchorPane layoutX="-4.0" layoutY="347.0" prefHeight="160.0" prefWidth="610.0">
                            <children>
                               <Text fill="#2c3639" layoutX="91.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
                               <Text fill="#2c3639" layoutX="91.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
                               <TextField fx:id="txtUsuario" layoutX="173.0" layoutY="46.0" prefHeight="26.0" prefWidth="345.0" />
                               <PasswordField fx:id="txtContrasena" layoutX="173.0" layoutY="89.0" prefHeight="26.0" prefWidth="345.0" />
-                              <Text fill="#dcd7c9" layoutX="53.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion de usuario" textAlignment="CENTER" wrappingWidth="127.57110595703125" />
+                              <Text fill="WHITE" layoutX="53.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion de usuario" textAlignment="CENTER" wrappingWidth="127.57110595703125" />
                            </children>
                         </AnchorPane>
-                        <Button fx:id="btnRegistrase" layoutX="216.0" layoutY="501.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #3F4E4F;" text="Registrarse" textFill="#dcd7c9" />
+                        <Button fx:id="btnRegistrase" layoutX="216.0" layoutY="514.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: #183d3d;" text="Registrarse" textFill="WHITE" />
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab style="-fx-background-color: #DCD7C9; -fx-border-color: #3F4E4F;" text="Autenticación">
+          <Tab style="-fx-background-color: #ffffff; -fx-border-color: #183d3d;" text="Autenticación">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="600.0" scaleX="0.0" />
             </content>

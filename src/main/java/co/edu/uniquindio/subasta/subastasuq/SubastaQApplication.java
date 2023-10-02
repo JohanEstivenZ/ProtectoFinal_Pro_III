@@ -11,7 +11,7 @@ public class SubastaQApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(SubastaQApplication.class.getResource("/co.edu.uniquindio.subas.subastasuq/subastas.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 560);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 580);
         stage.setTitle("ProtectoFinal_Pro_III");
         stage.setScene(scene);
         stage.show();
