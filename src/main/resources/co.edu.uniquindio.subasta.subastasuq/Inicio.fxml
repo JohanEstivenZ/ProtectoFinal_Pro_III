@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="Principal" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.SubastaQViewController">
+<AnchorPane fx:id="Principal" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.InicioViewController">
    <children>
       <TabPane prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #183d3d;" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
         <tabs>

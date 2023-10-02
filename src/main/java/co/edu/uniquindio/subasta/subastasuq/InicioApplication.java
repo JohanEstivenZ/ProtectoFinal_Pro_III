@@ -7,10 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SubastaQApplication extends Application {
+public class InicioApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SubastaQApplication.class.getResource("/co.edu.uniquindio.subas.subastasuq/subastas.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(InicioApplication.class.getResource("/co.edu.uniquindio.subasta.subastasuq/Inicio.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 600);
         stage.setTitle("ProtectoFinal_Pro_III");
         stage.setScene(scene);

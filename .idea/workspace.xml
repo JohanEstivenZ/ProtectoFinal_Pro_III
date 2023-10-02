@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/AnuncianteViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/CompradorViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Anunciante.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Comprador.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/SubastaQApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/InicioApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/SubastaQViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/InicioViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Inicio.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +23,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,6 +104,7 @@
       <workItem from="1696211194036" duration="1043000" />
       <workItem from="1696212482957" duration="626000" />
       <workItem from="1696214746291" duration="1614000" />
+      <workItem from="1696216568177" duration="808000" />
     </task>
     <servers />
   </component>
