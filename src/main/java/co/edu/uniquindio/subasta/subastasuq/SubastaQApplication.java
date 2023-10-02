@@ -15,6 +15,7 @@ public class SubastaQApplication extends Application {
         stage.setTitle("ProtectoFinal_Pro_III");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
