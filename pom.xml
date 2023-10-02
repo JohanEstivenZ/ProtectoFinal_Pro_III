@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.protectofinal_pro_iii/co.edu.uniquindio.subasta.subastasuq.HelloApplication
+                                com.example.protectofinal_pro_iii/co.edu.uniquindio.subasta.subastasuq.SubastaQApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

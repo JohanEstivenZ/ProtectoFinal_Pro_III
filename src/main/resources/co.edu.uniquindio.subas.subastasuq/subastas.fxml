@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.SubastaQViewController">
    <children>
-      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
+      <TabPane prefHeight="560.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
         <tabs>
           <Tab text="Registro">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="600.0">
                      <children>
-                        <TextField alignment="TOP_CENTER" layoutX="1.0" layoutY="14.0" prefHeight="26.0" prefWidth="600.0" text="A continuacion ingrese la informacion solicitada en los campos, todo en minusculas" />
+                        <Text layoutX="80.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A continuacion ingrese la informacion solicitada en los campos, todo en minusculas" />
+                        <AnchorPane layoutX="1.0" layoutY="56.0" prefHeight="230.0" prefWidth="600.0">
+                           <children>
+                              <Text layoutX="75.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+                              <Text layoutX="75.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido" />
+                              <TextField fx:id="txtNombre" layoutX="150.0" layoutY="46.0" prefHeight="26.0" prefWidth="370.0" />
+                              <TextField fx:id="txtApellido" layoutX="150.0" layoutY="87.0" prefHeight="26.0" prefWidth="370.0" />
+                              <TextField fx:id="txtCedula" layoutX="150.0" layoutY="126.0" prefHeight="26.0" prefWidth="370.0" />
+                              <TextField fx:id="txtEdad" layoutX="150.0" layoutY="171.0" prefHeight="26.0" prefWidth="370.0" />
+                              <Text layoutX="75.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula" />
+                              <Text layoutX="75.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+                              <Text layoutX="24.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion personal" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="1.0" layoutY="286.0" prefHeight="180.0" prefWidth="600.0">
+                           <children>
+                              <Text layoutX="29.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion de usuario" />
+                              <Text layoutX="77.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+                              <Text layoutX="77.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+                              <TextField fx:id="txtUsuario" layoutX="152.0" layoutY="66.0" prefHeight="26.0" prefWidth="370.0" />
+                              <PasswordField fx:id="txtContrasena" layoutX="152.0" layoutY="108.0" prefHeight="26.0" prefWidth="370.0" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btnRegistrase" layoutX="215.0" layoutY="477.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Registrarse" />
                      </children>
                   </AnchorPane>
             </content>
