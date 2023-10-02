@@ -43,7 +43,7 @@ public class SubastaQuindio implements ISubastaQuindio {
         Usuario nuevoUsuario = null;
         boolean usuarioExistente = verificarUsuarioExistente(nombreUsuario, cedula);
         if(usuarioExistente){
-            throw new UsuarioException("El usuario: "+nombreUsuario+" o la cedula"+cedula+ " ya existe");
+            throw new UsuarioException("El usuario: "+nombreUsuario+" o la cedula: "+cedula+ " ya existe");
         }else{
             nuevoUsuario = new Usuario();
             nuevoUsuario.setNombreUsuario(nombreUsuario);
