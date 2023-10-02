@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65bb5768-38dc-41df-9499-9ad766c5cd90" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/SubastaQApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/SubastaQApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/SubastaQViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/SubastaQViewController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/SubastaQApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/SubastaQApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/SQ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/SQ.png" afterDir="false" />
+>>>>>>> acb12524a77ded56c37bcca9856ad3a74b39e43e
       <change beforePath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subas.subastasuq/subastas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +100,11 @@
       <workItem from="1696198507797" duration="7548000" />
       <workItem from="1696198507797" duration="5820000" />
       <workItem from="1696208609640" duration="1538000" />
+<<<<<<< HEAD
       <workItem from="1696211205751" duration="1042000" />
+=======
+      <workItem from="1696211194036" duration="1014000" />
+>>>>>>> acb12524a77ded56c37bcca9856ad3a74b39e43e
     </task>
     <servers />
   </component>
