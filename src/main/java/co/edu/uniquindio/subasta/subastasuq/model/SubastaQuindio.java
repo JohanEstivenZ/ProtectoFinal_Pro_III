@@ -1,5 +1,6 @@
 package co.edu.uniquindio.subasta.subastasuq.model;
 
+import co.edu.uniquindio.subasta.subastasuq.exceptions.AnuncioException;
 import co.edu.uniquindio.subasta.subastasuq.exceptions.UsuarioException;
 import co.edu.uniquindio.subasta.subastasuq.model.service.ISubastaQuindio;
 
@@ -39,12 +40,12 @@ public class SubastaQuindio implements ISubastaQuindio {
     }
 
     @Override
-    public Usuario crearUsuario(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException{
+    public Usuario crearUsuario(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException {
         Usuario nuevoUsuario = null;
         boolean usuarioExistente = verificarUsuarioExistente(nombreUsuario, cedula);
-        if(usuarioExistente){
-            throw new UsuarioException("El usuario: "+nombreUsuario+" o la cedula: "+cedula+ " ya existe");
-        }else{
+        if (usuarioExistente) {
+            throw new UsuarioException("El usuario: " + nombreUsuario + " o la cedula: " + cedula + " ya existe");
+        } else {
             nuevoUsuario = new Usuario();
             nuevoUsuario.setNombreUsuario(nombreUsuario);
             nuevoUsuario.setContrasena(contrasena);
@@ -65,11 +66,22 @@ public class SubastaQuindio implements ISubastaQuindio {
 
     @Override
     public boolean verificarUsuarioExistente(String nombreUsuario, String cedula) throws UsuarioException {
-        if(usuarioExiste(nombreUsuario, cedula)){
-            throw new UsuarioException("El usuario: "+nombreUsuario+" ya existe");
-        }else{
+        if (usuarioExiste(nombreUsuario, cedula)) {
+            throw new UsuarioException("El usuario: " + nombreUsuario + " ya existe");
+        } else {
             return false;
         }
+    }
+
+    public boolean usuarioExiste(String nombreUsuario, String cedula) {
+        boolean usuarioEncontrado = false;
+        for (Usuario usuario : getListaUsuarios()) {
+            if (usuario.getNombreUsuario().equalsIgnoreCase(nombreUsuario) || usuario.getCedula().equalsIgnoreCase(cedula)) {
+                usuarioEncontrado = true;
+                break;
+            }
+        }
+        return usuarioEncontrado;
     }
 
     @Override
@@ -77,32 +89,41 @@ public class SubastaQuindio implements ISubastaQuindio {
         // TODO Auto-generated method stub
         return getListaUsuarios();
     }
+}
 
-    public boolean usuarioExiste(String nombreUsuario, String cedula) {
-        boolean usuarioEncontrado = false;
-        for (Usuario usuario : getListaUsuarios()) {
-            if(usuario.getNombreUsuario().equalsIgnoreCase(nombreUsuario)||usuario.getCedula().equalsIgnoreCase(cedula)){
-                usuarioEncontrado = true;
-                break;
-            }
-        }
-        return usuarioEncontrado;
-    }
-    public Usuario crearAnuncio(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException{
-        Usuario nuevoUsuario = null;
-        boolean usuarioExistente = verificarUsuarioExistente(nombreUsuario, cedula);
-        if(usuarioExistente){
-            throw new UsuarioException("El usuario: "+nombreUsuario+" o la cedula"+cedula+ " ya existe");
+
+    /*public Anuncio crearAnuncio( String nombreAnuncio, String codigoAnuncio, String nombreProducto, String tipoProducto) throws UsuarioException, AnuncioException {
+        Anuncio nuevoAnuncio = null;
+        boolean anuncioExistente = verificarAnuncioExistente(codigoAnuncio, tipoProducto);
+        if(anuncioExistente){
+            throw new AnuncioException("El producto: "+tipoProducto+" con codigo: "+codigoAnuncio+" ya existe");
         }else{
-            nuevoUsuario = new Usuario();
-            nuevoUsuario.setNombreUsuario(nombreUsuario);
-            nuevoUsuario.setContrasena(contrasena);
-            nuevoUsuario.setNombre(nombre);
-            nuevoUsuario.setApellido(apellido);
-            nuevoUsuario.setCedula(cedula);
-            nuevoUsuario.setEdad(edad);
+            nuevoAnuncio = new Anuncio();
+            nuevoAnuncio.setNombreAnuncio(nombreAnuncio);
+            nuevoAnuncio.setCodigoAnuncio(codigoAnuncio);
+            nuevoAnuncio.setNombreProducto(nombreProducto);
+            nuevoAnuncio.setTipoProducto(tipoProducto);
+
             getListaUsuarios().add(nuevoUsuario);
         }
         return nuevoUsuario;
     }
-}
+    public boolean verificarAnuncioExistente(String codigoAnuncio, String tipoProducto) throws AnuncioException {
+        if(anuncioExistente(codigoAnuncio, tipoProducto)){
+            throw new AnuncioException("El producto: "+tipoProducto+" con codigo: "+codigoAnuncio+" ya existe");
+        }else{
+            return false;
+        }
+    }
+    public boolean anuncioExistente(String codigoAnuncio, String tipoProduct) {
+        boolean anuncioEncontrado = false;
+        for (Anunciante anuncio : getListaAnunciantes()) {
+            if ()
+            //if(Anuncio.getCodigoAnuncio.equalsIgnoreCase(codigoAnuncio)||Anuncio.getCedula().equalsIgnoreCase(cedula)){
+                anuncioEncontrado = true;
+                break;
+            }
+        }
+        return anuncioEncontrado;
+    }
+}*/

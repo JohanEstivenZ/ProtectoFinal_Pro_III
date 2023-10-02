@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Anunciante {
 
     ArrayList<Anuncio> listaAnuncios = new ArrayList<>();
-    ArrayList<Producto> listaProductos = new ArrayList<>();
 
     public Anunciante() {
     }
@@ -18,11 +17,4 @@ public class Anunciante {
         this.listaAnuncios = listaAnuncios;
     }
 
-    public ArrayList<Producto> getListaProductos() {
-        return listaProductos;
-    }
-
-    public void setListaProductos(ArrayList<Producto> listaProductos) {
-        this.listaProductos = listaProductos;
-    }
 }

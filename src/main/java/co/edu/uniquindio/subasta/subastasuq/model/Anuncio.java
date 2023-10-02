@@ -4,6 +4,8 @@ public class Anuncio {
     private String nombreAnuncio;
 
     private String codigoAnuncio;
+    private String nombreProducto;
+    private String tipoProducto;
 
     public Anuncio() {
     }
@@ -22,5 +24,20 @@ public class Anuncio {
 
     public void setCodigoAnuncio(String codigoAnuncio) {
         this.codigoAnuncio = codigoAnuncio;
+    }
+    public String getNombreProducto() {
+        return nombreProducto;
+    }
+
+    public void setNombreProducto(String nombreProducto) {
+        this.nombreProducto = nombreProducto;
+    }
+
+    public String getTipoProducto() {
+        return tipoProducto;
+    }
+
+    public void setTipoProducto(String tipoProducto) {
+        this.tipoProducto = tipoProducto;
     }
 }
