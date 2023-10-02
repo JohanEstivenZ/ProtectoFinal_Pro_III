@@ -6,11 +6,12 @@ import co.edu.uniquindio.subasta.subastasuq.model.Usuario;
 import java.util.ArrayList;
 
 public interface ISubastaQuindio {
-    Usuario crearUsuario(String nombreUsuario, String contrasena) throws UsuarioException;
+    
+    Usuario crearUsuario(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException;
 
-    void agregarEmpleado(Usuario nuevoUsuario) throws UsuarioException;
+    void agregarUsuario(Usuario nuevoUsuario);
 
-    boolean verificarUsuarioExistente(String nombreUsuario) throws UsuarioException;
+    boolean verificarUsuarioExistente(String nombreUsuario, String cedula) throws UsuarioException;
 
     ArrayList<Usuario> obtenerUsuarios();
 }

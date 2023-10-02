@@ -2,18 +2,18 @@ package co.edu.uniquindio.subasta.subastasuq.model;
 
 import java.util.ArrayList;
 
-public class Comprador extends Persona {
+public class Comprador {
 
-    ArrayList<Puja> listaClientes = new ArrayList<>();
+    ArrayList<Puja> listaPujas = new ArrayList<>();
 
     public Comprador() {
     }
 
-    public ArrayList<Puja> getListaClientes() {
-        return listaClientes;
+    public ArrayList<Puja> getListaPujas() {
+        return listaPujas;
     }
 
-    public void setListaClientes(ArrayList<Puja> listaClientes) {
-        this.listaClientes = listaClientes;
+    public void setListaPujas(ArrayList<Puja> listaPujas) {
+        this.listaPujas = listaPujas;
     }
 }

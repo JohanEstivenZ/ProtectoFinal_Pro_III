@@ -2,7 +2,7 @@ package co.edu.uniquindio.subasta.subastasuq.model;
 
 import java.util.ArrayList;
 
-public class Anunciante extends Persona{
+public class Anunciante {
 
     ArrayList<Anuncio> listaAnuncios = new ArrayList<>();
     ArrayList<Producto> listaProductos = new ArrayList<>();
