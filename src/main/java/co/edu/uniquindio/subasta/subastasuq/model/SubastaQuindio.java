@@ -115,15 +115,22 @@ public class SubastaQuindio implements ISubastaQuindio {
             return false;
         }
     }
-    public boolean anuncioExistente(String codigoAnuncio, String tipoProduct) {
+    public boolean anuncioExistente(String codigoAnuncio, String tipoProducto) {
         boolean anuncioEncontrado = false;
         for (Anunciante anuncio : getListaAnunciantes()) {
-            if ()
+            if (anuncio.getListaAnuncios())
             //if(Anuncio.getCodigoAnuncio.equalsIgnoreCase(codigoAnuncio)||Anuncio.getCedula().equalsIgnoreCase(cedula)){
                 anuncioEncontrado = true;
                 break;
             }
         }
         return anuncioEncontrado;
+    public ArrayList<Anunciante> obtenerAnuncio() {
+        // TODO Auto-generated method stub
+        return getListaAnunciantes();
     }
-}*/
+}
+
+     */
+
+
