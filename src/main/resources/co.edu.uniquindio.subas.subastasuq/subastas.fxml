@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.SubastaQViewController">
+<AnchorPane fx:id="Principal" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.subasta.subastasuq.viewController.SubastaQViewController">
    <children>
       <TabPane prefHeight="580.0" prefWidth="600.0" style="-fx-background-color: #DCD7C9;" tabClosingPolicy="UNAVAILABLE" tabMinWidth="279.0">
         <tabs>

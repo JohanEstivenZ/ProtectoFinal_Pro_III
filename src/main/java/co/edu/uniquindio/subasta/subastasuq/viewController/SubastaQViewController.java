@@ -4,6 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+
+import java.security.Principal;
 
 public class SubastaQViewController {
 
@@ -21,6 +24,5 @@ public class SubastaQViewController {
     private PasswordField txtContrasena;
     @FXML
     private Button btnRegistrase;
-
 
 }
