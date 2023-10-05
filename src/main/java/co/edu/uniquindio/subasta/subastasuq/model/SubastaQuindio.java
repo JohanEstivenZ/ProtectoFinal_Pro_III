@@ -8,18 +8,18 @@ import java.util.ArrayList;
 
 public class SubastaQuindio implements ISubastaQuindio {
 
-    ArrayList<Anunciante> listaAnunciantes = new ArrayList<>();
+    ArrayList<Anuncio> listaAnunciantes = new ArrayList<>();
     ArrayList<Comprador> listaCompradores = new ArrayList<>();
     ArrayList<Usuario> listaUsuarios = new ArrayList<>();
 
     public SubastaQuindio() {
     }
 
-    public ArrayList<Anunciante> getListaAnunciantes() {
+    public ArrayList<Anuncio> getListaAnunciantes() {
         return listaAnunciantes;
     }
 
-    public void setListaAnunciantes(ArrayList<Anunciante> listaAnunciantes) {
+    public void setListaAnunciantes(ArrayList<Anuncio> listaAnunciantes) {
         this.listaAnunciantes = listaAnunciantes;
     }
 
@@ -57,8 +57,6 @@ public class SubastaQuindio implements ISubastaQuindio {
         }
         return nuevoUsuario;
     }
-
-    @Override
     public void agregarUsuario(Usuario nuevoUsuario) {
         getListaUsuarios().add(nuevoUsuario);
     }
@@ -89,48 +87,26 @@ public class SubastaQuindio implements ISubastaQuindio {
         // TODO Auto-generated method stub
         return getListaUsuarios();
     }
-}
 
 
-    /*public Anuncio crearAnuncio( String nombreAnuncio, String codigoAnuncio, String nombreProducto, String tipoProducto) throws UsuarioException, AnuncioException {
+
+    public Anuncio crearAnuncio( String nombreAnuncio, String codigoAnuncio, String nombreProducto, String tipoProducto) {
         Anuncio nuevoAnuncio = null;
-        boolean anuncioExistente = verificarAnuncioExistente(codigoAnuncio, tipoProducto);
-        if(anuncioExistente){
-            throw new AnuncioException("El producto: "+tipoProducto+" con codigo: "+codigoAnuncio+" ya existe");
-        }else{
             nuevoAnuncio = new Anuncio();
             nuevoAnuncio.setNombreAnuncio(nombreAnuncio);
             nuevoAnuncio.setCodigoAnuncio(codigoAnuncio);
             nuevoAnuncio.setNombreProducto(nombreProducto);
             nuevoAnuncio.setTipoProducto(tipoProducto);
 
-            getListaUsuarios().add(nuevoUsuario);
-        }
-        return nuevoUsuario;
+            getListaAnunciantes().add(nuevoAnuncio);
+
+        return nuevoAnuncio;
     }
-    public boolean verificarAnuncioExistente(String codigoAnuncio, String tipoProducto) throws AnuncioException {
-        if(anuncioExistente(codigoAnuncio, tipoProducto)){
-            throw new AnuncioException("El producto: "+tipoProducto+" con codigo: "+codigoAnuncio+" ya existe");
-        }else{
-            return false;
-        }
-    }
-    public boolean anuncioExistente(String codigoAnuncio, String tipoProducto) {
-        boolean anuncioEncontrado = false;
-        for (Anunciante anuncio : getListaAnunciantes()) {
-            if (anuncio.getListaAnuncios())
-            //if(Anuncio.getCodigoAnuncio.equalsIgnoreCase(codigoAnuncio)||Anuncio.getCedula().equalsIgnoreCase(cedula)){
-                anuncioEncontrado = true;
-                break;
-            }
-        }
-        return anuncioEncontrado;
-    public ArrayList<Anunciante> obtenerAnuncio() {
-        // TODO Auto-generated method stub
-        return getListaAnunciantes();
-    }
+
+
+
 }
 
-     */
+
 
 

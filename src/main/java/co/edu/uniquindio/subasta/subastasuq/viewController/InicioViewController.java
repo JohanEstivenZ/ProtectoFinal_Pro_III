@@ -1,12 +1,12 @@
 package co.edu.uniquindio.subasta.subastasuq.viewController;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-
 public class InicioViewController {
 
     @FXML
@@ -34,4 +34,9 @@ public class InicioViewController {
     private CheckBox showContrasena;
     @FXML
     private Button btnAutentificarse;
+
+    @FXML
+    void nuevoUsuario(ActionEvent event){
+
+    }
 }
