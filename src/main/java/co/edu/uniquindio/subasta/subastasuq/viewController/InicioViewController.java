@@ -1,7 +1,7 @@
 package co.edu.uniquindio.subasta.subastasuq.viewController;
 
 import co.edu.uniquindio.subasta.subastasuq.model.Usuario;
-import co.edu.uniquindio.subasta.subastasuq.model.service.ISubastaQuindio;
+//import co.edu.uniquindio.subasta.subastasuq.controller
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
