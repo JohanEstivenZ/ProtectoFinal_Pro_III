@@ -8,10 +8,6 @@ public class Anuncio {
     private String codigoAnuncio;
     private String nombreProducto;
     private String tipoProducto;
-    ArrayList<Anuncio> listaAnuncios = new ArrayList<>();
-
-
-
 
 
     public Anuncio() {
@@ -47,11 +43,5 @@ public class Anuncio {
     public void setTipoProducto(String tipoProducto) {
         this.tipoProducto = tipoProducto;
     }
-    public ArrayList<Anuncio> getListaAnuncios() {
-        return listaAnuncios;
-    }
 
-    public void setListaAnuncios(ArrayList<Anuncio> listaAnuncios) {
-        this.listaAnuncios = listaAnuncios;
-    }
 }
