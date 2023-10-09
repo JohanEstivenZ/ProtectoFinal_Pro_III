@@ -29,10 +29,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2W2VcoAY8OxhuoUOSZZsJdSNDBi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -123,6 +123,7 @@
       <workItem from="1696817869732" duration="1921000" />
       <workItem from="1696821358974" duration="8000" />
       <workItem from="1696821375100" duration="13000" />
+      <workItem from="1696821396350" duration="595000" />
     </task>
     <servers />
   </component>
