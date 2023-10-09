@@ -1,9 +1,6 @@
 module application {
     requires javafx.controls;
-    requires javafx.fxml;
-
-
-
+    requires javafx.fxml;s
 
     exports co.edu.uniquindio.subasta.subastasuq.exceptions;
     opens co.edu.uniquindio.subasta.subastasuq.exceptions to javafx.fxml;
