@@ -10,9 +10,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 public class InicioViewController {
-
-    EmpleadoController empleadoControllerService;
-
     @FXML
     private TextField txtNombre;
     @FXML
