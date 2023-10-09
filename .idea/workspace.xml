@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/AutentificacionViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/RegistroViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/dto/PruebaDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Autentificacion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Autentificacion.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Registro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Registro.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +103,7 @@
       <workItem from="1696814023425" duration="1236000" />
       <workItem from="1696813933359" duration="54000" />
       <workItem from="1696815402501" duration="462000" />
-      <workItem from="1696815887327" duration="217000" />
+      <workItem from="1696815887327" duration="240000" />
     </task>
     <servers />
   </component>
