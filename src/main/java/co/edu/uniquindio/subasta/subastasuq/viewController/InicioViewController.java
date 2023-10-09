@@ -37,7 +37,8 @@ public class InicioViewController {
     private Button btnAutentificarse;
 
     @FXML
-    void nuevoUsuario(ActionEvent event) {
+
+    void nuevoUsuario (ActionEvent event) {
         Usuario usuarioService = new Usuario();
 
         // Llamada al método de la clase UsuarioService
@@ -45,5 +46,6 @@ public class InicioViewController {
                 Integer.parseInt(txtEdad.getText()), txtUsuario.getText(),
                 txtContrasena.getText());
     }*/
+
     }
 }
