@@ -38,11 +38,5 @@ public class InicioViewController {
 
     @FXML
     void nuevoUsuario(ActionEvent event){
-        Usuario usuarioService = new Usuario();
-
-        // Llamada al método de la clase UsuarioService
-        usuarioService.agregarUsuario(txtNombre.getText(), txtApellido.getText(), txtCedula.getText(),
-                Integer.parseInt(txtEdad.getText()), txtUsuario.getText(),
-                txtContrasena.getText());
     }
 }
