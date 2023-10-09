@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IUsuarioControllerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/UsuarioController.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="" />
+>>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +22,12 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
-        <option value="Record" />
         <option value="Class" />
+<<<<<<< HEAD
         <option value="FxmlFile" />
         <option value="Interface" />
+=======
+>>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
       </list>
     </option>
   </component>
@@ -30,7 +36,11 @@
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
+<<<<<<< HEAD
   &quot;associatedIndex&quot;: 3
+=======
+  &quot;associatedIndex&quot;: -1
+>>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
 }</component>
   <component name="ProjectId" id="2W2VcoAY8OxhuoUOSZZsJdSNDBi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -107,9 +117,14 @@
       <workItem from="1696813826003" duration="83000" />
       <workItem from="1696814023425" duration="1236000" />
       <workItem from="1696813933359" duration="54000" />
+<<<<<<< HEAD
       <workItem from="1696814023260" duration="1430000" />
       <workItem from="1696815633763" duration="7000" />
       <workItem from="1696815654596" duration="401000" />
+=======
+      <workItem from="1696815402501" duration="462000" />
+      <workItem from="1696815887327" duration="240000" />
+>>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
     </task>
     <servers />
   </component>
