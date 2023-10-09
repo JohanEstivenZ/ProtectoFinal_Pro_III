@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
 
+
       <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/mappers/SubastaQuindioMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/utils/RegistroUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -18,6 +19,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
 
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/exceptions/PujaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/exceptions/PujaException.java" afterDir="false" />
+
+
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Anunciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/Anunciante.java" afterDir="false" />
 
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,7 +151,11 @@
       <workItem from="1696817230699" duration="3248000" />
 
       <workItem from="1696817559934" duration="281000" />
+
       <workItem from="1696817869732" duration="1155000" />
+
+
+      <workItem from="1696817869732" duration="1921000" />
 
     </task>
     <servers />

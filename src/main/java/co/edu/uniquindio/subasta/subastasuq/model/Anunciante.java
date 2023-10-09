@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Anunciante {
 
-    ArrayList<Anuncio> listaAnuncios = new ArrayList<>();
+    static ArrayList<Anuncio> listaAnuncios = new ArrayList<>();
 
     public static ArrayList<Anuncio> getListaAnuncios() {
         return listaAnuncios;
