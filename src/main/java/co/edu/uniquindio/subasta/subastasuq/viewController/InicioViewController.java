@@ -1,7 +1,8 @@
 package co.edu.uniquindio.subasta.subastasuq.viewController;
 
 import co.edu.uniquindio.subasta.subastasuq.model.Usuario;
-//import co.edu.uniquindio.subasta.subastasuq.controller
+import co.edu.uniquindio.subasta.subastasuq.controller.UsuarioController;
+import co.edu.uniquindio.subasta.subastasuq.mapping.dto.UsuarioDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -48,4 +49,8 @@ public class InicioViewController {
     }*/
 
     }
+   /* private void obtenerUsiario() {
+        listaUsuariosDto
+        listaEmpleadosDto.addAll(empleadoControllerService.obtenerEmpleados());
+    }*/
 }
