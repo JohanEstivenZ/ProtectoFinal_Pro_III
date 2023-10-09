@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IUsuarioControllerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/UsuarioController.java" afterDir="false" />
     </list>
-=======
+
     <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="" />
->>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
+
+    <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/AutentificacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/ModelFactoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/RegistroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IModelFactoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IRegistroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/Prueba2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IAutentificacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,11 +34,12 @@
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Class" />
-<<<<<<< HEAD
+
         <option value="FxmlFile" />
         <option value="Interface" />
-=======
->>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
+
+        <option value="Interface" />
+
       </list>
     </option>
   </component>
@@ -36,11 +48,11 @@
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
-<<<<<<< HEAD
+
   &quot;associatedIndex&quot;: 3
-=======
+
   &quot;associatedIndex&quot;: -1
->>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
+
 }</component>
   <component name="ProjectId" id="2W2VcoAY8OxhuoUOSZZsJdSNDBi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,19 +60,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/juanj/Downloads/banco_javafx-dev-2-banco-crud/bancoUq",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main\resources\Images" />
@@ -70,6 +83,7 @@
       <recent name="C:\Users\juanj\OneDrive\Documentos\GitHub\ProtectoFinal_Pro_III\src\main" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="co.edu.uniquindio.subasta.subastasuq.controller" />
       <recent name="co.edu.uniquindio.subasta.subastasuq.model" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -117,14 +131,17 @@
       <workItem from="1696813826003" duration="83000" />
       <workItem from="1696814023425" duration="1236000" />
       <workItem from="1696813933359" duration="54000" />
-<<<<<<< HEAD
+
       <workItem from="1696814023260" duration="1430000" />
       <workItem from="1696815633763" duration="7000" />
       <workItem from="1696815654596" duration="401000" />
-=======
+
       <workItem from="1696815402501" duration="462000" />
       <workItem from="1696815887327" duration="240000" />
->>>>>>> 497405535a401d3251ea2ff1f1e023a8c6633522
+
+      <workItem from="1696816151894" duration="58000" />
+      <workItem from="1696816239100" duration="675000" />
+
     </task>
     <servers />
   </component>
