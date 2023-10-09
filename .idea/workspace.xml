@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
+
       <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/mappers/SubastaQuindioMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/model/utils/RegistroUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -15,6 +16,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IUsuarioControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/service/IUsuarioControllerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/InicioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/InicioViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/exceptions/PujaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/exceptions/PujaException.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +30,14 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
+
         <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Interface" />
+
+        <option value="Interface" />
+        <option value="Record" />
+
         <option value="Class" />
       </list>
     </option>
@@ -36,10 +45,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": -1
 }]]></component>
+
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
+
   <component name="ProjectId" id="2W2VcoAY8OxhuoUOSZZsJdSNDBi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -117,14 +133,21 @@
       <workItem from="1696813826003" duration="83000" />
       <workItem from="1696814023425" duration="1236000" />
       <workItem from="1696813933359" duration="54000" />
+
       <workItem from="1696814023260" duration="1430000" />
       <workItem from="1696815633763" duration="7000" />
       <workItem from="1696815654596" duration="401000" />
+
       <workItem from="1696815402501" duration="462000" />
       <workItem from="1696815887327" duration="240000" />
       <workItem from="1696816151894" duration="58000" />
       <workItem from="1696816239100" duration="675000" />
+
       <workItem from="1696817230699" duration="3248000" />
+
+      <workItem from="1696817559934" duration="281000" />
+      <workItem from="1696817869732" duration="1155000" />
+
     </task>
     <servers />
   </component>

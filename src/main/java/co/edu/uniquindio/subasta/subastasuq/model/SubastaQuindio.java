@@ -5,6 +5,7 @@ import co.edu.uniquindio.subasta.subastasuq.exceptions.UsuarioException;
 import co.edu.uniquindio.subasta.subastasuq.model.service.ISubastaQuindio;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class SubastaQuindio implements ISubastaQuindio {
 
@@ -18,6 +19,8 @@ public class SubastaQuindio implements ISubastaQuindio {
     public ArrayList<Anuncio> getListaAnunciantes() {
         return listaAnunciantes;
     }
+
+
 
     public void setListaAnunciantes(ArrayList<Anuncio> listaAnunciantes) {
         this.listaAnunciantes = listaAnunciantes;
@@ -38,6 +41,8 @@ public class SubastaQuindio implements ISubastaQuindio {
     public void setListaUsuarios(ArrayList<Usuario> listaUsuarios) {
         this.listaUsuarios = listaUsuarios;
     }
+
+
 
     @Override
     public Usuario crearUsuario(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException {
@@ -103,6 +108,15 @@ public class SubastaQuindio implements ISubastaQuindio {
         return nuevoAnuncio;
     }
 
+    public void agregarAnuncio(Anuncio nuevoAnuncio) {
+        getListaAnuncios().add(nuevoAnuncio);
+    }
+
+    private Collection<Anuncio> getListaAnuncios() {
+        Anunciante anunciante = new Anunciante(); // Crear una instancia de la clase Anunciante
+        ArrayList<Anuncio> listaAnuncios = Anunciante.getListaAnuncios(); // Obtener la lista de anuncios desde la instancia
+        return listaAnuncios; // Devolver la lista de anuncios
+    }
 
 
 }

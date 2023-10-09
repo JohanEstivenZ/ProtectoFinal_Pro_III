@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class ModelFactoryController implements IModelFactoryService {
+
     SubastaQuindio subastaQuindio;
     SubastaQuindioMapper mapper = SubastaQuindioMapper.INSTANCE;
 
@@ -87,4 +88,5 @@ public class ModelFactoryController implements IModelFactoryService {
     public boolean agregarEmpleado(UsuarioDto usuarioDto) {
         return false;
     }
+
 }
