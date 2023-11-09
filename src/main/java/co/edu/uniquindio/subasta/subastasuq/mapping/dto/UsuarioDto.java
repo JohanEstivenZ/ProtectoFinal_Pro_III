@@ -6,7 +6,7 @@ public record UsuarioDto(
         String nombre,
         String apellido,
         String cedula,
-        int edad) {
+        String edad) {
 
 
 }

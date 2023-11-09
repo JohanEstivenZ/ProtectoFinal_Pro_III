@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="" />
+    <list default="true" id="c062ad9b-d874-4152-9001-9b37044ac0c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/RegistroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/controller/RegistroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/dto/UsuarioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/mapping/dto/UsuarioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/InicioViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/InicioViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/RegistroViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/uniquindio/subasta/subastasuq/viewController/RegistroViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Registro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/co.edu.uniquindio.subasta.subastasuq/Registro.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +34,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": -1
+  "customColor": "",
+  "associatedIndex": 5
 }]]></component>
   <component name="ProjectId" id="2W2VcoAY8OxhuoUOSZZsJdSNDBi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,6 +130,7 @@
       <workItem from="1696821396350" duration="595000" />
       <workItem from="1698088630052" duration="623000" />
       <workItem from="1698090136702" duration="655000" />
+      <workItem from="1699549358334" duration="2570000" />
     </task>
     <servers />
   </component>
