@@ -6,7 +6,6 @@ import co.edu.uniquindio.subasta.subastasuq.mapping.mappers.SubastaQuindioMapper
 import co.edu.uniquindio.subasta.subastasuq.model.SubastaQuindio;
 import co.edu.uniquindio.subasta.subastasuq.model.utils.RegistroUtils;
 
-import java.io.IOException;
 import java.util.List;
 
 public class ModelFactoryController implements IModelFactoryService {
@@ -82,6 +81,12 @@ public class ModelFactoryController implements IModelFactoryService {
     @Override
     public List<UsuarioDto> obtenerEmpleados() {
         return null;
+    }
+
+    @Override
+    public List<UsuarioDto> obtenerUsuarios() {
+
+        return mapper.getUsuariosDto(subastaQuindio.getListaUsuarios());
     }
 
     @Override

@@ -3,6 +3,8 @@ package co.edu.uniquindio.subasta.subastasuq.viewController;
 import co.edu.uniquindio.subasta.subastasuq.controller.RegistroController;
 import co.edu.uniquindio.subasta.subastasuq.mapping.dto.UsuarioDto;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -13,6 +15,8 @@ import javafx.scene.control.TextField;
 public class RegistroViewController {
 
     RegistroController registroControllerService;
+
+    ObservableList<UsuarioDto> listaUsuariosDto = FXCollections.observableArrayList();
     @FXML
     private TextField txtNombre;
     @FXML
@@ -30,7 +34,7 @@ public class RegistroViewController {
 
     @FXML
     public void nuevoUsuario(ActionEvent actionEvent) {
-        crearEmpleado();
+        crearUsuario();
     }
 
     @FXML
@@ -39,12 +43,24 @@ public class RegistroViewController {
         intiView();
     }
     private void intiView() {
-        //initDataBinding();
-        //obtenerEmpleados();
+        initDataBinding();
+        obtenerEmpleados();
         //tableEmpleados.getItems().clear();
         //tableEmpleados.setItems(listaEmpleadosDto);
-        //listenerSelection();
+        listenerSelection();
     }
+
+    private void listenerSelection() {
+        //tableEmpleados.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+        //empleadoSeleccionado = newSelection;
+        //mostrarInformacionEmpleado(empleadoSeleccionado);
+    //}
+    }
+
+    private void obtenerEmpleados() {
+        listaUsuariosDto.addAll(registroControllerService.obtenerUsuarios());
+    }
+
     private void initDataBinding() {
         //tcNombre.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().nombre()));
         //tcApellido.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().apellido()));
@@ -56,7 +72,7 @@ public class RegistroViewController {
         //tcCodigo.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().codigo()));
     }
 
-    private void crearEmpleado() {
+    private void crearUsuario() {
         //1. Capturar los datos
         UsuarioDto usuarioDto = construirEmpleadoDto();
         //2. Validar la información
