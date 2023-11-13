@@ -11,4 +11,7 @@ public interface IModelFactoryService {
 
     boolean agregarEmpleado(UsuarioDto usuarioDto);
 
+    boolean agregarUsuario(UsuarioDto usuarioDto);
+
+    boolean eliminarEmpleado(String nombreUsuario);
 }

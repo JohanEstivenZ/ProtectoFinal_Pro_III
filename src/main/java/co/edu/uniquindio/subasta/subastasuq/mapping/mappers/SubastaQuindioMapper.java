@@ -15,7 +15,7 @@ public interface SubastaQuindioMapper {
     @Named("usuarioToUsuarioDto")
     UsuarioDto empleadoToEmpleadoDto(Usuario usuario);
 
-    Usuario empleadoDtoToEmpleado(UsuarioDto usuarioDto);
+    Usuario usurioDtoToUsuario(UsuarioDto usuarioDto);
 
     @IterableMapping(qualifiedByName = "usuarioToUsuarioDto")
     List<UsuarioDto> getUsuariosDto(List<Usuario> listaUsiarios);
@@ -25,7 +25,7 @@ public interface SubastaQuindioMapper {
 
 
     @Mapping(target = "nombreCliente", source = "cliente.nombre")
-//    @IterableMapping(qualifiedByName = "cunetaToCuentaDto")
+    @IterableMapping(qualifiedByName = "cunetaToCuentaDto")
     UsuarioDto usuarioToUsuarioDto(Usuario usuario);
 
 }

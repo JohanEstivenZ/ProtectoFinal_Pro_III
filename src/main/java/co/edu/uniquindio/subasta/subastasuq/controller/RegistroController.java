@@ -15,4 +15,24 @@ public class RegistroController implements IRegistroService {
     public List<UsuarioDto> obtenerUsuarios() {
         return modelFactoryController.obtenerUsuarios();
     }
+
+    @Override
+    public boolean agregarEmpleado(UsuarioDto usuarioDto) {
+        return modelFactoryController.agregarUsuario(usuarioDto);
+    }
+
+    @Override
+    public boolean eliminarEmpleado(String cedula) {
+        return modelFactoryController.eliminarEmpleado(cedula);
+    }
+
+    //@Override
+    //public boolean actualizarEmpleado(String cedulaActual, UsuarioDto usuarioDto) {
+    //    return modelFactoryController.actualizarEmpleado(cedulaActual, usuarioDto);
+    //}
+
+    @Override
+    public void registrarAcciones(String mensaje, int nivel, String accion) {
+        modelFactoryController.registrarAccionesSistema(mensaje, nivel, accion);
+    }
 }

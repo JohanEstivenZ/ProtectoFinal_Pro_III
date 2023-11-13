@@ -1,9 +1,12 @@
 package co.edu.uniquindio.subasta.subastasuq.controller;
 
 import co.edu.uniquindio.subasta.subastasuq.controller.service.IModelFactoryService;
+import co.edu.uniquindio.subasta.subastasuq.exceptions.UsuarioException;
 import co.edu.uniquindio.subasta.subastasuq.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.subasta.subastasuq.mapping.mappers.SubastaQuindioMapper;
 import co.edu.uniquindio.subasta.subastasuq.model.SubastaQuindio;
+import co.edu.uniquindio.subasta.subastasuq.model.Usuario;
+import co.edu.uniquindio.subasta.subastasuq.model.utils.Persistencia;
 import co.edu.uniquindio.subasta.subastasuq.model.utils.RegistroUtils;
 
 import java.util.List;
@@ -92,6 +95,40 @@ public class ModelFactoryController implements IModelFactoryService {
     @Override
     public boolean agregarEmpleado(UsuarioDto usuarioDto) {
         return false;
+    }
+
+    @Override
+    public boolean agregarUsuario(UsuarioDto usuarioDto) {
+        try{
+            if(!subastaQuindio.verificarUsuarioExistente(usuarioDto.nombreUsuario(),usuarioDto.cedula())) {
+                Usuario usuario = mapper.usurioDtoToUsuario(usuarioDto);
+                getSubastaQuindio().agregarUsuario(usuario);
+                guardarResourceXML();
+            }
+            return true;
+        }catch (UsuarioException e){
+            e.getMessage();
+            return false;
+        }
+    }
+
+    private void guardarResourceXML() {
+        Persistencia.guardarRecursoSubastasXML(subastaQuindio);
+    }
+
+    @Override
+    public boolean eliminarEmpleado(String nombreUsuario) {
+        boolean flagExiste = false;
+        try {
+            flagExiste = getSubastaQuindio().eliminarEmpleado(nombreUsuario);
+        } catch (UsuarioException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return flagExiste;
+    }
+    public void registrarAccionesSistema(String mensaje, int nivel, String accion) {
+        Persistencia.guardaRegistroLog(mensaje, nivel, accion);
     }
 
 }

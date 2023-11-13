@@ -2,6 +2,8 @@ module application {
     requires javafx.controls;
     requires javafx.fxml;
     requires org.mapstruct;
+    requires java.logging;
+    requires java.desktop;
 
 
     exports co.edu.uniquindio.subasta.subastasuq.exceptions;

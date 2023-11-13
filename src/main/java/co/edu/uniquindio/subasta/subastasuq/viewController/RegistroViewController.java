@@ -77,20 +77,32 @@ public class RegistroViewController {
         UsuarioDto usuarioDto = construirEmpleadoDto();
         //2. Validar la información
         if(datosValidos(usuarioDto)){
-            //if(empleadoControllerService.agregarEmpleado(empleadoDto)){
-            //    listaEmpleadosDto.add(empleadoDto);
-            //    mostrarMensaje("Notificación empleado", "Empleado creado", "El empleado se ha creado con éxito", Alert.AlertType.INFORMATION);
-            //    limpiarCamposEmpleado();
-            //    registrarAcciones("Empleado agregado",1, "Agregar empleado");
+            if(registroControllerService.agregarEmpleado(usuarioDto)){
+                listaUsuariosDto.add(usuarioDto);
+                mostrarMensaje("Notificación empleado", "Empleado creado", "El empleado se ha creado con éxito", Alert.AlertType.INFORMATION);
+                limpiarCamposEmpleado();
+                registrarAcciones("Empleado agregado",1, "Agregar empleado");
             }else{
                 mostrarMensaje("Notificación empleado", "Empleado no creado", "El empleado no se ha creado con éxito", Alert.AlertType.ERROR);
             }
-        //}else{
-         //   mostrarMensaje("Notificación empleado", "Empleado no creado", "Los datos ingresados son invalidos", Alert.AlertType.ERROR);
-       // }
+        }else{
+            mostrarMensaje("Notificación empleado", "Empleado no creado", "Los datos ingresados son invalidos", Alert.AlertType.ERROR);
+        }
 
     }
 
+    private void registrarAcciones(String mensaje, int nivel, String accion) {
+        registroControllerService.registrarAcciones(mensaje, nivel, accion);
+    }
+
+    private void limpiarCamposEmpleado() {
+        txtNombre.setText("");
+        txtApellido.setText("");
+        txtCedula.setText("");
+        txtEdad.setText("");
+        txtContrasena.setText("");
+        txtUsuario.setText("");
+    }
 
 
     private UsuarioDto construirEmpleadoDto() {
@@ -112,8 +124,8 @@ public class RegistroViewController {
             mensaje += "El apellido es invalido \n" ;
         if(usuarioDto.cedula() == null || usuarioDto.cedula().equals(""))
             mensaje += "El documento es invalido \n" ;
-        if(usuarioDto.edad() == null || usuarioDto.edad().equals(""))
-            mensaje += "La edad es invalida \n" ;
+        //if(usuarioDto.edad() == null || usuarioDto.edad().equals(""))
+        //    mensaje += "La edad es invalida \n" ;
         if(mensaje.equals("")){
             return true;
         }else{

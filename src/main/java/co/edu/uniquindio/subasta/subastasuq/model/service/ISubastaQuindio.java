@@ -14,4 +14,6 @@ public interface ISubastaQuindio {
     boolean verificarUsuarioExistente(String nombreUsuario, String cedula) throws UsuarioException;
 
     ArrayList<Usuario> obtenerUsuarios();
+
+    Usuario obtenerUsuario(String nombreUsuario);
 }
