@@ -3,29 +3,30 @@ package co.edu.uniquindio.subasta.subastasuq.mapping.mappers;
 import co.edu.uniquindio.subasta.subastasuq.mapping.dto.UsuarioDto;
 import co.edu.uniquindio.subasta.subastasuq.model.Usuario;
 import org.mapstruct.IterableMapping;
+import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
-
+@Mapper
 public interface SubastaQuindioMapper {
     SubastaQuindioMapper INSTANCE = Mappers.getMapper(SubastaQuindioMapper.class);
 
     @Named("usuarioToUsuarioDto")
-    UsuarioDto empleadoToEmpleadoDto(Usuario usuario);
+    UsuarioDto usuarioToUsuarioDto(Usuario usuario);
 
-    Usuario empleadoDtoToEmpleado(UsuarioDto usuarioDto);
+    Usuario usurioDtoToUsuario(UsuarioDto usuarioDto);
 
     @IterableMapping(qualifiedByName = "usuarioToUsuarioDto")
-    List<UsuarioDto> getEmpleadosDto(List<Usuario> listaUsiarios);
+    List<UsuarioDto> getUsuariosDto(List<Usuario> listaUsiarios);
 
 //    @Named("usuarioToUsuarioDto")
 //    UsuarioDto mappingToEmpeladoDto(Usuario usuario);
 
 
-    @Mapping(target = "nombreCliente", source = "cliente.nombre")
-//    @IterableMapping(qualifiedByName = "cunetaToCuentaDto")
-    UsuarioDto usuarioToUsuarioDto(Usuario usuario);
+    @Mapping(target = "nombreUsuarioa", source = "usuario.nombre")
+    @IterableMapping(qualifiedByName = "usuarioToUsuarioDto")
+    UsuarioDto usuarioToUsuarioDtoWithMapping(Usuario usuario);
 
 }

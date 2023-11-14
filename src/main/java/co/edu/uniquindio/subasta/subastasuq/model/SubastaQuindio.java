@@ -1,6 +1,5 @@
 package co.edu.uniquindio.subasta.subastasuq.model;
 
-import co.edu.uniquindio.subasta.subastasuq.exceptions.AnuncioException;
 import co.edu.uniquindio.subasta.subastasuq.exceptions.UsuarioException;
 import co.edu.uniquindio.subasta.subastasuq.model.service.ISubastaQuindio;
 
@@ -62,7 +61,7 @@ public class SubastaQuindio implements ISubastaQuindio {
         }
         return nuevoUsuario;
     }
-    public void agregarUsuario(Usuario nuevoUsuario) {
+    public void agregarUsuario(Usuario nuevoUsuario) throws UsuarioException{
         getListaUsuarios().add(nuevoUsuario);
     }
 
@@ -92,6 +91,17 @@ public class SubastaQuindio implements ISubastaQuindio {
         // TODO Auto-generated method stub
         return getListaUsuarios();
     }
+    @Override
+    public Usuario obtenerUsuario(String nombreUsuario) {
+        Usuario usuarioEncontrado = null;
+        for (Usuario usuario : getListaUsuarios()) {
+            if(usuario.getNombreUsuario().equalsIgnoreCase(nombreUsuario)){
+                usuarioEncontrado = usuario;
+                break;
+            }
+        }
+        return usuarioEncontrado;
+    }
 
 
 
@@ -118,7 +128,18 @@ public class SubastaQuindio implements ISubastaQuindio {
         return listaAnuncios; // Devolver la lista de anuncios
     }
 
-
+    public Boolean eliminarEmpleado(String nombreUsuario) throws UsuarioException {
+        Usuario usuario = null;
+        boolean flagExiste = false;
+        usuario = obtenerUsuario(nombreUsuario);
+        if(usuario == null)
+            throw new UsuarioException("El usuario a eliminar no existe");
+        else{
+            getListaUsuarios().remove(usuario);
+            flagExiste = true;
+        }
+        return flagExiste;
+    }
 }
 
 

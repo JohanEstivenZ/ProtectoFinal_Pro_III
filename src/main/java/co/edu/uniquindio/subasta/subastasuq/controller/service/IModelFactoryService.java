@@ -5,7 +5,11 @@ import co.edu.uniquindio.subasta.subastasuq.mapping.dto.UsuarioDto;
 import java.util.List;
 
 public interface IModelFactoryService {
-    List<UsuarioDto> obtenerEmpleados();
-    boolean agregarEmpleado(UsuarioDto usuarioDto);
 
+    List<UsuarioDto> obtenerUsuarios();
+
+
+    boolean agregarUsuario(UsuarioDto usuarioDto);
+
+    boolean eliminarEmpleado(String nombreUsuario);
 }

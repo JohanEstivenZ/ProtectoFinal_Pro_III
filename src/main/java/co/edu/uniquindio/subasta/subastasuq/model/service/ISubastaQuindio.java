@@ -9,9 +9,11 @@ public interface ISubastaQuindio {
     
     Usuario crearUsuario(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException;
 
-    void agregarUsuario(Usuario nuevoUsuario);
+    void agregarUsuario(Usuario nuevoUsuario) throws UsuarioException;
 
     boolean verificarUsuarioExistente(String nombreUsuario, String cedula) throws UsuarioException;
 
     ArrayList<Usuario> obtenerUsuarios();
+
+    Usuario obtenerUsuario(String nombreUsuario);
 }
