@@ -9,6 +9,7 @@ import co.edu.uniquindio.subasta.subastasuq.model.Usuario;
 import co.edu.uniquindio.subasta.subastasuq.model.utils.Persistencia;
 import co.edu.uniquindio.subasta.subastasuq.model.utils.RegistroUtils;
 
+import java.io.IOException;
 import java.util.List;
 
 public class ModelFactoryController implements IModelFactoryService {
@@ -45,28 +46,28 @@ public class ModelFactoryController implements IModelFactoryService {
 
         //Siempre se debe verificar si la raiz del recurso es null
 
-        //if(subastaQuindio == null){
-            //cargarDatosBase();
-            //guardarResourceXML();
-        //}
-        //registrarAccionesSistema("Inicio de sesión", 1, "inicioSesión");
+        if(subastaQuindio == null){
+            cargarDatosBase();
+            guardarResourceXML();
+        }
+        registrarAccionesSistema("Inicio de sesión", 1, "inicioSesión");
     }
     private void cargarDatosDesdeArchivos() {
         subastaQuindio = new SubastaQuindio();
-        //try {
-            //Persistencia.cargarDatosArchivos(banco);
-        //} catch (IOException e) {
-          //  throw new RuntimeException(e);
-        //}
+        try {
+            Persistencia.cargarDatosArchivos(subastaQuindio);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void salvarDatosPrueba() {
-        /*try {
-            Persistencia.guardarEmpleados(getBanco().getListaEmpleados());
-            Persistencia.guardarClientes(getBanco().getListaClientes());
+        try {
+            Persistencia.guardarUsuarios(getSubastaQuindio().getListaUsuarios());
+            Persistencia.guardarAnuncios(getSubastaQuindio().getListaAnunciantes());
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }*/
+        }
     }
 
     private void cargarDatosBase() {
@@ -76,15 +77,10 @@ public class ModelFactoryController implements IModelFactoryService {
         return subastaQuindio;
     }
 
-    public void setSubastaQuindio(SubastaQuindio banco) {
+    public void setSubastaQuindio(SubastaQuindio subastaQuindio) {
         this.subastaQuindio = subastaQuindio;
     }
 
-
-    @Override
-    public List<UsuarioDto> obtenerEmpleados() {
-        return null;
-    }
 
     @Override
     public List<UsuarioDto> obtenerUsuarios() {
@@ -92,10 +88,6 @@ public class ModelFactoryController implements IModelFactoryService {
         return mapper.getUsuariosDto(subastaQuindio.getListaUsuarios());
     }
 
-    @Override
-    public boolean agregarEmpleado(UsuarioDto usuarioDto) {
-        return false;
-    }
 
     @Override
     public boolean agregarUsuario(UsuarioDto usuarioDto) {
@@ -112,10 +104,6 @@ public class ModelFactoryController implements IModelFactoryService {
         }
     }
 
-    private void guardarResourceXML() {
-        Persistencia.guardarRecursoSubastasXML(subastaQuindio);
-    }
-
     @Override
     public boolean eliminarEmpleado(String nombreUsuario) {
         boolean flagExiste = false;
@@ -127,8 +115,28 @@ public class ModelFactoryController implements IModelFactoryService {
         }
         return flagExiste;
     }
+
+    private void cargarResourceXML() {
+        subastaQuindio = Persistencia.cargarRecursoSubastasXML();
+    }
+    private void guardarResourceXML() {
+        Persistencia.guardarRecursoSubastasXML(subastaQuindio);
+    }
+    private void cargarResourceBinario() {
+        subastaQuindio = Persistencia.cargarRecursoSubastasBinario();
+    }
+    private void guardarResourceBinario() {
+
+        Persistencia.guardarRecursoSubastasBinario(subastaQuindio);
+    }
     public void registrarAccionesSistema(String mensaje, int nivel, String accion) {
         Persistencia.guardaRegistroLog(mensaje, nivel, accion);
     }
+
+
+
+
+
+
 
 }

@@ -7,16 +7,16 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+
+import java.util.Optional;
 
 public class RegistroViewController {
 
     RegistroController registroControllerService;
 
     ObservableList<UsuarioDto> listaUsuariosDto = FXCollections.observableArrayList();
+    UsuarioDto usuarioSeleccionado;
     @FXML
     private TextField txtNombre;
     @FXML
@@ -40,27 +40,15 @@ public class RegistroViewController {
     @FXML
     void  initialize (){
         registroControllerService = new RegistroController();
-        //intiView();
+        intiView();
     }
     private void intiView() {
         initDataBinding();
-        obtenerEmpleados();
+        obtenerUsuarios();
         //tableEmpleados.getItems().clear();
         //tableEmpleados.setItems(listaEmpleadosDto);
-        listenerSelection();
+        //listenerSelection();
     }
-
-    private void listenerSelection() {
-        //tableEmpleados.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
-        //empleadoSeleccionado = newSelection;
-        //mostrarInformacionEmpleado(empleadoSeleccionado);
-    //}
-    }
-
-    private void obtenerEmpleados() {
-        listaUsuariosDto.addAll(registroControllerService.obtenerUsuarios());
-    }
-
     private void initDataBinding() {
         //tcNombre.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().nombre()));
         //tcApellido.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().apellido()));
@@ -71,16 +59,27 @@ public class RegistroViewController {
         //tcSalario.setCellValueFactory(cellData -> new SimpleStringProperty(String.valueOf(cellData.getValue().salario())));
         //tcCodigo.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().codigo()));
     }
+    private void obtenerUsuarios() {
+
+        listaUsuariosDto.addAll(registroControllerService.obtenerUsuarios());
+    }
+
+    private void listenerSelection() {
+        //tableEmpleados.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
+        //empleadoSeleccionado = newSelection;
+        //mostrarInformacionEmpleado(empleadoSeleccionado);
+    //}
+    }
 
     private void crearUsuario() {
         //1. Capturar los datos
-        UsuarioDto usuarioDto = construirEmpleadoDto();
+        UsuarioDto usuarioDto = construirUsuarioDto();
         //2. Validar la información
         if(datosValidos(usuarioDto)){
-            if(registroControllerService.agregarEmpleado(usuarioDto)){
+            if(registroControllerService.agregarUsuario(usuarioDto)){
                 listaUsuariosDto.add(usuarioDto);
                 mostrarMensaje("Notificación empleado", "Empleado creado", "El empleado se ha creado con éxito", Alert.AlertType.INFORMATION);
-                limpiarCamposEmpleado();
+                limpiarCamposUsuario();
                 registrarAcciones("Empleado agregado",1, "Agregar empleado");
             }else{
                 mostrarMensaje("Notificación empleado", "Empleado no creado", "El empleado no se ha creado con éxito", Alert.AlertType.ERROR);
@@ -95,7 +94,7 @@ public class RegistroViewController {
         registroControllerService.registrarAcciones(mensaje, nivel, accion);
     }
 
-    private void limpiarCamposEmpleado() {
+    private void limpiarCamposUsuario() {
         txtNombre.setText("");
         txtApellido.setText("");
         txtCedula.setText("");
@@ -105,7 +104,7 @@ public class RegistroViewController {
     }
 
 
-    private UsuarioDto construirEmpleadoDto() {
+    private UsuarioDto construirUsuarioDto() {
         return new UsuarioDto(
                 txtUsuario.getText(),
                 txtContrasena.getText(),
@@ -124,8 +123,12 @@ public class RegistroViewController {
             mensaje += "El apellido es invalido \n" ;
         if(usuarioDto.cedula() == null || usuarioDto.cedula().equals(""))
             mensaje += "El documento es invalido \n" ;
-        //if(usuarioDto.edad() == null || usuarioDto.edad().equals(""))
-        //    mensaje += "La edad es invalida \n" ;
+        if(usuarioDto.nombreUsuario() == null || usuarioDto.nombreUsuario().equals(""))
+            mensaje += "El nombre de usuario es invalido \n" ;
+        if(usuarioDto.edad() == null || usuarioDto.edad().equals(""))
+            mensaje += "La edad del usuario es invalida \n" ;
+        if(usuarioDto.contrasena() == null || usuarioDto.contrasena().equals(""))
+            mensaje += "La contraseña del usuario es invalida \n" ;
         if(mensaje.equals("")){
             return true;
         }else{
@@ -139,6 +142,18 @@ public class RegistroViewController {
         aler.setHeaderText(header);
         aler.setContentText(contenido);
         aler.showAndWait();
+    }
+    private boolean mostrarMensajeConfirmacion(String mensaje) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setHeaderText(null);
+        alert.setTitle("Confirmación");
+        alert.setContentText(mensaje);
+        Optional<ButtonType> action = alert.showAndWait();
+        if (action.get() == ButtonType.OK) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

@@ -2,7 +2,7 @@ package co.edu.uniquindio.subasta.subastasuq.mapping.dto;
 
 public record UsuarioDto(
         String nombreUsuario,
-        String contraseña,
+        String contrasena,
         String nombre,
         String apellido,
         String cedula,

@@ -8,7 +8,7 @@ import java.util.List;
 public class RegistroController implements IRegistroService {
     ModelFactoryController modelFactoryController;
 
-    public void UsuarioController(){
+    public RegistroController(){
         modelFactoryController = ModelFactoryController.getInstance();
     }
 
@@ -16,13 +16,14 @@ public class RegistroController implements IRegistroService {
         return modelFactoryController.obtenerUsuarios();
     }
 
+
     @Override
-    public boolean agregarEmpleado(UsuarioDto usuarioDto) {
+    public boolean agregarUsuario(UsuarioDto usuarioDto) {
         return modelFactoryController.agregarUsuario(usuarioDto);
     }
 
     @Override
-    public boolean eliminarEmpleado(String cedula) {
+    public boolean eliminarUsuario(String cedula) {
         return modelFactoryController.eliminarEmpleado(cedula);
     }
 

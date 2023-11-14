@@ -61,7 +61,7 @@ public class SubastaQuindio implements ISubastaQuindio {
         }
         return nuevoUsuario;
     }
-    public void agregarUsuario(Usuario nuevoUsuario) {
+    public void agregarUsuario(Usuario nuevoUsuario) throws UsuarioException{
         getListaUsuarios().add(nuevoUsuario);
     }
 

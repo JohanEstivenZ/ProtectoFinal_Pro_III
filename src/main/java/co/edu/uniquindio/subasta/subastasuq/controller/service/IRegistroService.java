@@ -5,9 +5,10 @@ import co.edu.uniquindio.subasta.subastasuq.mapping.dto.UsuarioDto;
 
 public interface IRegistroService {
 
-    boolean agregarEmpleado(UsuarioDto usuarioDto);
 
-    boolean eliminarEmpleado(String cedula);
+    boolean agregarUsuario(UsuarioDto usuarioDto);
+
+    boolean eliminarUsuario(String cedula);
 
     void registrarAcciones(String mensaje, int nivel, String accion);
 }
