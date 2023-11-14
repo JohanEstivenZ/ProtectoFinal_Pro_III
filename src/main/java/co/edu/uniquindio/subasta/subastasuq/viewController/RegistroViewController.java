@@ -40,7 +40,7 @@ public class RegistroViewController {
     @FXML
     void  initialize (){
         registroControllerService = new RegistroController();
-        intiView();
+        //intiView();
     }
     private void intiView() {
         initDataBinding();
