@@ -39,11 +39,11 @@ public class RegistroViewController {
 
     @FXML
     void  initialize (){
-        registroControllerService = new RegistroController();
+        //registroControllerService = new RegistroController();
         //intiView();
     }
     private void intiView() {
-        initDataBinding();
+        //initDataBinding();
         obtenerUsuarios();
         //tableEmpleados.getItems().clear();
         //tableEmpleados.setItems(listaEmpleadosDto);

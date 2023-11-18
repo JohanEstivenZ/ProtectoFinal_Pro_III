@@ -11,7 +11,7 @@ public interface ISubastaQuindio {
 
     void agregarUsuario(Usuario nuevoUsuario) throws UsuarioException;
 
-    boolean verificarUsuarioExistente(String nombreUsuario, String cedula) throws UsuarioException;
+    boolean verificarUsuarioExistente(String cedula) throws UsuarioException;
 
     ArrayList<Usuario> obtenerUsuarios();
 

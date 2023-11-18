@@ -30,19 +30,19 @@ public class ModelFactoryController implements IModelFactoryService {
     public ModelFactoryController() {
         //1. inicializar datos y luego guardarlo en archivos
         System.out.println("invocación clase singleton");
-        //cargarDatosBase();
-        //salvarDatosPrueba();
+        cargarDatosBase();
+        salvarDatosPrueba();
 
         //2. Cargar los datos de los archivos
-        //cargarDatosDesdeArchivos();
+        cargarDatosDesdeArchivos();
 
         //3. Guardar y Cargar el recurso serializable binario
-        //cargarResourceBinario();
-        //guardarResourceBinario();
+        cargarResourceBinario();
+        guardarResourceBinario();
 
         //4. Guardar y Cargar el recurso serializable XML
-        //guardarResourceXML();
-        //cargarResourceXML();
+        guardarResourceXML();
+        cargarResourceXML();
 
         //Siempre se debe verificar si la raiz del recurso es null
 
@@ -92,7 +92,7 @@ public class ModelFactoryController implements IModelFactoryService {
     @Override
     public boolean agregarUsuario(UsuarioDto usuarioDto) {
         try{
-            if(!subastaQuindio.verificarUsuarioExistente(usuarioDto.nombreUsuario(),usuarioDto.cedula())) {
+            if(!subastaQuindio.verificarUsuarioExistente(usuarioDto.cedula())) {
                 Usuario usuario = mapper.usurioDtoToUsuario(usuarioDto);
                 getSubastaQuindio().agregarUsuario(usuario);
                 guardarResourceXML();

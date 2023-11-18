@@ -19,11 +19,13 @@ public class RegistroController implements IRegistroService {
 
     @Override
     public boolean agregarUsuario(UsuarioDto usuarioDto) {
+
         return modelFactoryController.agregarUsuario(usuarioDto);
     }
 
     @Override
     public boolean eliminarUsuario(String cedula) {
+
         return modelFactoryController.eliminarEmpleado(cedula);
     }
 

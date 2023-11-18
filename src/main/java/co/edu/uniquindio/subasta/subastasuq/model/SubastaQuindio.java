@@ -3,11 +3,13 @@ package co.edu.uniquindio.subasta.subastasuq.model;
 import co.edu.uniquindio.subasta.subastasuq.exceptions.UsuarioException;
 import co.edu.uniquindio.subasta.subastasuq.model.service.ISubastaQuindio;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class SubastaQuindio implements ISubastaQuindio {
+public class SubastaQuindio implements ISubastaQuindio, Serializable {
 
+    private static final long serialVersionUID = 1L;
     ArrayList<Anuncio> listaAnunciantes = new ArrayList<>();
     ArrayList<Comprador> listaCompradores = new ArrayList<>();
     ArrayList<Usuario> listaUsuarios = new ArrayList<>();
@@ -16,6 +18,7 @@ public class SubastaQuindio implements ISubastaQuindio {
     }
 
     public ArrayList<Anuncio> getListaAnunciantes() {
+
         return listaAnunciantes;
     }
 
@@ -46,9 +49,9 @@ public class SubastaQuindio implements ISubastaQuindio {
     @Override
     public Usuario crearUsuario(String nombreUsuario, String contrasena, String nombre, String apellido, String cedula, int edad) throws UsuarioException {
         Usuario nuevoUsuario = null;
-        boolean usuarioExistente = verificarUsuarioExistente(nombreUsuario, cedula);
+        boolean usuarioExistente = verificarUsuarioExistente(cedula);
         if (usuarioExistente) {
-            throw new UsuarioException("El usuario: " + nombreUsuario + " o la cedula: " + cedula + " ya existe");
+            throw new UsuarioException("El usuario con la cedula: " + cedula + " ya existe");
         } else {
             nuevoUsuario = new Usuario();
             nuevoUsuario.setNombreUsuario(nombreUsuario);
@@ -67,18 +70,18 @@ public class SubastaQuindio implements ISubastaQuindio {
 
 
     @Override
-    public boolean verificarUsuarioExistente(String nombreUsuario, String cedula) throws UsuarioException {
-        if (usuarioExiste(nombreUsuario, cedula)) {
-            throw new UsuarioException("El usuario: " + nombreUsuario + " ya existe");
+    public boolean verificarUsuarioExistente(String cedula) throws UsuarioException {
+        if (usuarioExiste(cedula)) {
+            throw new UsuarioException("El usuario: " + cedula + " ya existe");
         } else {
             return false;
         }
     }
 
-    public boolean usuarioExiste(String nombreUsuario, String cedula) {
+    public boolean usuarioExiste(String cedula) {
         boolean usuarioEncontrado = false;
         for (Usuario usuario : getListaUsuarios()) {
-            if (usuario.getNombreUsuario().equalsIgnoreCase(nombreUsuario) || usuario.getCedula().equalsIgnoreCase(cedula)) {
+            if (usuario.getNombreUsuario().equalsIgnoreCase(cedula)) {
                 usuarioEncontrado = true;
                 break;
             }
